@@ -1,0 +1,7 @@
+*.jou
+*.log
+*.str
+.Xil/
+CPU-ALU-stuff.cache/
+CPU-ALU-stuff.ip_user_files/
+CPU-ALU-stuff.runs/
