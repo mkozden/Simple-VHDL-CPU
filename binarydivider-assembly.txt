@@ -1,0 +1,46 @@
+--Assigned registers:
+--R7:stores N
+--R6:stores D
+--R5,R4:scratch registers
+--R2: will store n-1 , counter
+--R1:the value Q
+--R0:the value R
+
+
+LDR R7, R5 --Addressing the memory at address R5=0, let's assume it has the value N
+ADD R5, R5, #4
+LDR R6, R5 --Addressing the memory at address R5=4, let's assume it has the value D
+
+MOV R5, R7 --Copy N to R5
+LSR R5,R5,#1 --Shift R5 right by 1
+ADD R2,R2,#1 --Add 1 to R2
+CMP R4,R5 --Check if 0<R5, R4 will be kept at 0 for the duration of this process
+BLT -3 --Jump back 3 instructions until condition met
+
+SUB R2,R2,#1 -- n-1
+
+START:
+LSL R0,R0,#1 -- R <- R << 1
+LSR R4,R7,R2 -- get i-th bit of N
+AND R4,R4,#1 -- bitmask with 1 to remove higher bits
+ORR R0,R0,R4 -- R(0) <- N(i)
+
+CMP R0, R6
+BLT LESS -- label will be replaced by offset of 5
+SUB R0,R0,R6 -- R <- R - D
+MOV R4,#1
+LSL R4,R4,R2 --get number with only 1 in the i-th bit
+ORR R1,R1,R4 -- Q(i) <- 1
+
+LESS:
+MOV R4,#0
+CMP R2,R4
+BEQ DONE --label will be replaced with offset 3
+SUB R2,R2,#1 -- Counter <- Counter - 1
+JMP START --label will be replaced with PC address of 9 (addresses start from 0!!!!)
+
+DONE:
+MOV R5, #8
+STO R0, R5 --Store R to memory address 8
+MOV R5, #12
+STO R1, R5 --Store Q to memory address 12

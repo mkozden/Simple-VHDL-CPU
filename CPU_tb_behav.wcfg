@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="209.429 ns"></ZoomEndTime>
+      <Cursor1Time time="27.583 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="136"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/CPU_tb/Mem_data_in" type="array">
+      <obj_property name="ElementShortName">Mem_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/Mem_data_out" type="array">
+      <obj_property name="ElementShortName">Mem_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/Mem_addr_out" type="array">
+      <obj_property name="ElementShortName">Mem_addr_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem_addr_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/Instr_addr_out" type="array">
+      <obj_property name="ElementShortName">Instr_addr_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr_addr_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/Instr_in" type="array">
+      <obj_property name="ElementShortName">Instr_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/Mem_RW" type="logic">
+      <obj_property name="ElementShortName">Mem_RW</obj_property>
+      <obj_property name="ObjectShortName">Mem_RW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Datapath/Register_file/registers" type="array">
+      <obj_property name="ElementShortName">registers[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Control/PC_out" type="array">
+      <obj_property name="ElementShortName">PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Control/Branch_enable" type="logic">
+      <obj_property name="ElementShortName">Branch_enable</obj_property>
+      <obj_property name="ObjectShortName">Branch_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Control/Branch_mode" type="array">
+      <obj_property name="ElementShortName">Branch_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Branch_mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Datapath/Flags" type="array">
+      <obj_property name="ElementShortName">Flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Flags[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Control/Const_out" type="array">
+      <obj_property name="ElementShortName">Const_out[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Const_out[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Datapath/Register_file/reg_loads" type="array">
+      <obj_property name="ElementShortName">reg_loads[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_loads[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../carrylookahead-4bit.vhd" \
+"../../../../fourbyfouradder.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/shiftunit.vhd" \
+"../../../../n-to-1-mux.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/arithmeticunit.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/logicunit.vhd" \
+"../../../../JK_FF.vhd" \
+"../../../../shift_register.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/Control.vhd" \
+"../../../../decoder.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/register_file.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" \
+"../../../../CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd" \
+
+# Do not sort compile order
+nosort

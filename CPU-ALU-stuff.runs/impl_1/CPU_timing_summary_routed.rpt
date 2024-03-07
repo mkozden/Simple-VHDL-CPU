@@ -1,0 +1,927 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Mar  5 22:19:00 2024
+| Host         : DESKTOP-SMT4I8Q running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file CPU_timing_summary_routed.rpt -pb CPU_timing_summary_routed.pb -rpx CPU_timing_summary_routed.rpx -warn_on_violation
+| Design       : CPU
+| Device       : 7k70t-fbv676
+| Speed File   : -3  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  289         
+SYNTH-10   Warning           Wide multiplier              3           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (289)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (289)
+5. checking no_input_delay (49)
+6. checking no_output_delay (95)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (289)
+--------------------------
+ There are 289 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (289)
+--------------------------------------------------
+ There are 289 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (49)
+-------------------------------
+ There are 49 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (95)
+--------------------------------
+ There are 95 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  385          inf        0.000                      0                  385           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           385 Endpoints
+Min Delay           385 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            Datapath/ALU/flags_register/f[2].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.891ns  (logic 1.530ns (10.274%)  route 13.361ns (89.726%))
+  Logic Levels:           17  (IBUF=1 LUT2=1 LUT3=1 LUT4=3 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P19                                               0.000     0.000 f  rst (IN)
+                         net (fo=0)                   0.000     0.000    rst
+    P19                  IBUF (Prop_ibuf_I_O)         0.750     0.750 f  rst_IBUF_inst/O
+                         net (fo=604, routed)         4.333     5.083    Datapath/Register_file/regs[5].reg/f[20].FF/rst_IBUF
+    SLICE_X22Y75         LUT4 (Prop_lut4_I3_O)        0.043     5.126 r  Datapath/Register_file/regs[5].reg/f[20].FF/Mem_addr_out_OBUF[20]_inst_i_5/O
+                         net (fo=1, routed)           0.179     5.304    Datapath/Register_file/regs[7].reg/f[20].FF/full_result__1
+    SLICE_X20Y75         LUT6 (Prop_lut6_I5_O)        0.043     5.347 r  Datapath/Register_file/regs[7].reg/f[20].FF/Mem_addr_out_OBUF[20]_inst_i_3/O
+                         net (fo=1, routed)           0.238     5.585    Datapath/Register_file/regs[3].reg/f[20].FF/full_result__1_0
+    SLICE_X20Y75         LUT4 (Prop_lut4_I2_O)        0.043     5.628 r  Datapath/Register_file/regs[3].reg/f[20].FF/Mem_addr_out_OBUF[20]_inst_i_1/O
+                         net (fo=8, routed)           1.257     6.885    Datapath/Register_file/regs[3].reg/f[17].FF/A_i_20__8_1
+    SLICE_X1Y73          LUT4 (Prop_lut4_I3_O)        0.043     6.928 r  Datapath/Register_file/regs[3].reg/f[17].FF/A_i_28/O
+                         net (fo=1, routed)           0.337     7.265    Datapath/Register_file/regs[3].reg/f[14].FF/A_i_14__11_2
+    SLICE_X1Y73          LUT5 (Prop_lut5_I4_O)        0.043     7.308 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_20__8/O
+                         net (fo=1, routed)           0.217     7.525    Datapath/Register_file/regs[3].reg/f[14].FF/A_i_20__8_n_0
+    SLICE_X1Y73          LUT5 (Prop_lut5_I0_O)        0.043     7.568 f  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_14__11/O
+                         net (fo=62, routed)          1.475     9.042    Datapath/Register_file/regs[3].reg/f[14].FF/Mem_addr_out_OBUF[29]_inst_i_1
+    SLICE_X1Y70          LUT2 (Prop_lut2_I0_O)        0.049     9.091 f  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_10__11/O
+                         net (fo=25, routed)          1.792    10.883    Datapath/Register_file/regs[3].reg/f[31].FF/A_i_5__2_0
+    SLICE_X3Y68          LUT6 (Prop_lut6_I3_O)        0.129    11.012 f  Datapath/Register_file/regs[3].reg/f[31].FF/A_i_7__9/O
+                         net (fo=1, routed)           0.289    11.301    Datapath/Register_file/regs[3].reg/f[14].FF/A_i_3__2_0
+    SLICE_X3Y67          LUT6 (Prop_lut6_I3_O)        0.043    11.344 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_5__2/O
+                         net (fo=2, routed)           0.516    11.860    Datapath/Register_file/regs[3].reg/f[7].FF/A_i_22
+    SLICE_X3Y66          LUT6 (Prop_lut6_I1_O)        0.043    11.903 r  Datapath/Register_file/regs[3].reg/f[7].FF/A_i_23/O
+                         net (fo=1, routed)           0.345    12.248    Datapath/Register_file/regs[3].reg/f[12].FF/A_i_21_1
+    SLICE_X6Y66          LUT6 (Prop_lut6_I3_O)        0.043    12.291 r  Datapath/Register_file/regs[3].reg/f[12].FF/A_i_22/O
+                         net (fo=1, routed)           0.540    12.831    Datapath/Register_file/regs[3].reg/f[17].FF/A_i_15_1
+    SLICE_X5Y70          LUT6 (Prop_lut6_I3_O)        0.043    12.874 r  Datapath/Register_file/regs[3].reg/f[17].FF/A_i_21/O
+                         net (fo=1, routed)           0.583    13.457    Datapath/Register_file/regs[3].reg/f[20].FF/A_i_11_0
+    SLICE_X1Y71          LUT5 (Prop_lut5_I2_O)        0.043    13.500 r  Datapath/Register_file/regs[3].reg/f[20].FF/A_i_15/O
+                         net (fo=1, routed)           0.495    13.996    Datapath/Register_file/regs[3].reg/f[26].FF/A_i_4_1
+    SLICE_X1Y74          LUT6 (Prop_lut6_I3_O)        0.043    14.039 f  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_11/O
+                         net (fo=1, routed)           0.342    14.381    Datapath/Register_file/regs[3].reg/f[28].FF/A_reg_12
+    SLICE_X1Y74          LUT3 (Prop_lut3_I1_O)        0.043    14.424 r  Datapath/Register_file/regs[3].reg/f[28].FF/A_i_4/O
+                         net (fo=1, routed)           0.424    14.848    Datapath/Register_file/regs[3].reg/f[28].FF/A_i_4_n_0
+    SLICE_X1Y75          LUT6 (Prop_lut6_I2_O)        0.043    14.891 r  Datapath/Register_file/regs[3].reg/f[28].FF/A_i_1__261/O
+                         net (fo=1, routed)           0.000    14.891    Datapath/ALU/flags_register/f[2].FF/A_reg_1
+    SLICE_X1Y75          FDRE                                         r  Datapath/ALU/flags_register/f[2].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Instr_in[3]
+                            (input port)
+  Destination:            Datapath/Register_file/regs[1].reg/f[27].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.169ns  (logic 5.319ns (37.541%)  route 8.850ns (62.459%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=2 LUT4=1 LUT6=5 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C24                                               0.000     0.000 r  Instr_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    Instr_in[3]
+    C24                  IBUF (Prop_ibuf_I_O)         0.790     0.790 r  Instr_in_IBUF[3]_inst/O
+                         net (fo=130, routed)         4.236     5.026    Datapath/Register_file/regs[5].reg/f[14].FF/Instr_in_IBUF[1]
+    SLICE_X4Y63          LUT4 (Prop_lut4_I1_O)        0.050     5.076 r  Datapath/Register_file/regs[5].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_5/O
+                         net (fo=1, routed)           0.260     5.336    Datapath/Register_file/regs[7].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          LUT6 (Prop_lut6_I5_O)        0.126     5.462 r  Datapath/Register_file/regs[7].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_3/O
+                         net (fo=1, routed)           0.000     5.462    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          MUXF7 (Prop_muxf7_I1_O)      0.106     5.568 r  Datapath/Register_file/regs[3].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_1/O
+                         net (fo=14, routed)          1.171     6.739    Datapath/ALU/arithmetic/mul/full_result__1_0[14]
+    DSP48_X0Y27          DSP48E1 (Prop_dsp48e1_A[14]_PCOUT[47])
+                                                      2.594     9.333 r  Datapath/ALU/arithmetic/mul/full_result__0/PCOUT[47]
+                         net (fo=1, routed)           0.000     9.333    Datapath/ALU/arithmetic/mul/full_result__0_n_106
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[2])
+                                                      0.938    10.271 r  Datapath/ALU/arithmetic/mul/full_result__1/P[2]
+                         net (fo=2, routed)           0.623    10.894    Datapath/ALU/arithmetic/mul/full_result__1_n_103
+    SLICE_X12Y71         LUT2 (Prop_lut2_I0_O)        0.043    10.937 r  Datapath/ALU/arithmetic/mul/full_result_carry_i_1/O
+                         net (fo=1, routed)           0.000    10.937    Datapath/ALU/arithmetic/mul/full_result_carry_i_1_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173    11.110 r  Datapath/ALU/arithmetic/mul/full_result_carry/CO[3]
+                         net (fo=1, routed)           0.000    11.110    Datapath/ALU/arithmetic/mul/full_result_carry_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.050    11.160 r  Datapath/ALU/arithmetic/mul/full_result_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.160    Datapath/ALU/arithmetic/mul/full_result_carry__0_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.147    11.307 r  Datapath/ALU/arithmetic/mul/full_result_carry__1/O[3]
+                         net (fo=1, routed)           0.388    11.696    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__3__0[1]
+    SLICE_X9Y73          LUT6 (Prop_lut6_I5_O)        0.120    11.816 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_9__11/O
+                         net (fo=1, routed)           0.471    12.287    Datapath/Register_file/regs[3].reg/f[26].FF/A_i_3__26_1
+    SLICE_X3Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.330 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_5__26/O
+                         net (fo=2, routed)           0.614    12.944    Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__26_0
+    SLICE_X0Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.987 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_3__26/O
+                         net (fo=8, routed)           0.749    13.736    Datapath/Register_file/regs[3].reg/f[27].FF/D_data[27]
+    SLICE_X1Y82          LUT6 (Prop_lut6_I0_O)        0.043    13.779 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__54/O
+                         net (fo=1, routed)           0.337    14.116    Datapath/Register_file/regs[3].reg/f[27].FF/regs[1].reg/enable_27
+    SLICE_X1Y82          LUT2 (Prop_lut2_I0_O)        0.053    14.169 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_1__35/O
+                         net (fo=1, routed)           0.000    14.169    Datapath/Register_file/regs[1].reg/f[27].FF/A_reg_3
+    SLICE_X1Y82          FDRE                                         r  Datapath/Register_file/regs[1].reg/f[27].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Instr_in[3]
+                            (input port)
+  Destination:            Datapath/Register_file/regs[7].reg/f[27].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.081ns  (logic 5.317ns (37.762%)  route 8.764ns (62.238%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=2 LUT4=1 LUT6=5 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C24                                               0.000     0.000 r  Instr_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    Instr_in[3]
+    C24                  IBUF (Prop_ibuf_I_O)         0.790     0.790 r  Instr_in_IBUF[3]_inst/O
+                         net (fo=130, routed)         4.236     5.026    Datapath/Register_file/regs[5].reg/f[14].FF/Instr_in_IBUF[1]
+    SLICE_X4Y63          LUT4 (Prop_lut4_I1_O)        0.050     5.076 r  Datapath/Register_file/regs[5].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_5/O
+                         net (fo=1, routed)           0.260     5.336    Datapath/Register_file/regs[7].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          LUT6 (Prop_lut6_I5_O)        0.126     5.462 r  Datapath/Register_file/regs[7].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_3/O
+                         net (fo=1, routed)           0.000     5.462    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          MUXF7 (Prop_muxf7_I1_O)      0.106     5.568 r  Datapath/Register_file/regs[3].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_1/O
+                         net (fo=14, routed)          1.171     6.739    Datapath/ALU/arithmetic/mul/full_result__1_0[14]
+    DSP48_X0Y27          DSP48E1 (Prop_dsp48e1_A[14]_PCOUT[47])
+                                                      2.594     9.333 r  Datapath/ALU/arithmetic/mul/full_result__0/PCOUT[47]
+                         net (fo=1, routed)           0.000     9.333    Datapath/ALU/arithmetic/mul/full_result__0_n_106
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[2])
+                                                      0.938    10.271 r  Datapath/ALU/arithmetic/mul/full_result__1/P[2]
+                         net (fo=2, routed)           0.623    10.894    Datapath/ALU/arithmetic/mul/full_result__1_n_103
+    SLICE_X12Y71         LUT2 (Prop_lut2_I0_O)        0.043    10.937 r  Datapath/ALU/arithmetic/mul/full_result_carry_i_1/O
+                         net (fo=1, routed)           0.000    10.937    Datapath/ALU/arithmetic/mul/full_result_carry_i_1_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173    11.110 r  Datapath/ALU/arithmetic/mul/full_result_carry/CO[3]
+                         net (fo=1, routed)           0.000    11.110    Datapath/ALU/arithmetic/mul/full_result_carry_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.050    11.160 r  Datapath/ALU/arithmetic/mul/full_result_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.160    Datapath/ALU/arithmetic/mul/full_result_carry__0_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.147    11.307 r  Datapath/ALU/arithmetic/mul/full_result_carry__1/O[3]
+                         net (fo=1, routed)           0.388    11.696    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__3__0[1]
+    SLICE_X9Y73          LUT6 (Prop_lut6_I5_O)        0.120    11.816 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_9__11/O
+                         net (fo=1, routed)           0.471    12.287    Datapath/Register_file/regs[3].reg/f[26].FF/A_i_3__26_1
+    SLICE_X3Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.330 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_5__26/O
+                         net (fo=2, routed)           0.614    12.944    Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__26_0
+    SLICE_X0Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.987 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_3__26/O
+                         net (fo=8, routed)           0.569    13.556    Datapath/Register_file/regs[3].reg/f[27].FF/D_data[27]
+    SLICE_X0Y81          LUT6 (Prop_lut6_I0_O)        0.043    13.599 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__222/O
+                         net (fo=1, routed)           0.431    14.030    Datapath/Register_file/regs[3].reg/f[27].FF/regs[7].reg/enable_27
+    SLICE_X0Y81          LUT2 (Prop_lut2_I0_O)        0.051    14.081 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_1__227/O
+                         net (fo=1, routed)           0.000    14.081    Datapath/Register_file/regs[7].reg/f[27].FF/A_reg_2
+    SLICE_X0Y81          FDRE                                         r  Datapath/Register_file/regs[7].reg/f[27].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            Control/PC/f[29].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.062ns  (logic 1.536ns (10.923%)  route 12.526ns (89.077%))
+  Logic Levels:           17  (IBUF=1 LUT3=1 LUT5=8 LUT6=7)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P19                                               0.000     0.000 r  rst (IN)
+                         net (fo=0)                   0.000     0.000    rst
+    P19                  IBUF (Prop_ibuf_I_O)         0.750     0.750 r  rst_IBUF_inst/O
+                         net (fo=604, routed)         4.411     5.161    Datapath/ALU/flags_register/f[2].FF/rst_IBUF
+    SLICE_X0Y77          LUT5 (Prop_lut5_I2_O)        0.043     5.204 r  Datapath/ALU/flags_register/f[2].FF/A_i_4__32/O
+                         net (fo=1, routed)           1.198     6.403    Datapath/ALU/flags_register/f[2].FF/A_i_4__32_n_0
+    SLICE_X1Y112         LUT3 (Prop_lut3_I2_O)        0.043     6.446 r  Datapath/ALU/flags_register/f[2].FF/A_i_3__37/O
+                         net (fo=17, routed)          1.246     7.691    Control/PC/f[2].FF/A_reg_2
+    SLICE_X0Y150         LUT6 (Prop_lut6_I1_O)        0.043     7.734 f  Control/PC/f[2].FF/A_i_2__256/O
+                         net (fo=2, routed)           0.780     8.514    Control/PC/f[3].FF/A_reg_4
+    SLICE_X1Y150         LUT5 (Prop_lut5_I4_O)        0.043     8.557 r  Control/PC/f[3].FF/A_i_2__255/O
+                         net (fo=2, routed)           0.441     8.998    Control/PC/f[4].FF/A_reg_4
+    SLICE_X0Y151         LUT5 (Prop_lut5_I4_O)        0.043     9.041 r  Control/PC/f[4].FF/A_i_2__254/O
+                         net (fo=2, routed)           0.226     9.266    Control/PC/f[5].FF/A_reg_4
+    SLICE_X0Y151         LUT5 (Prop_lut5_I4_O)        0.043     9.309 r  Control/PC/f[5].FF/A_i_2__253/O
+                         net (fo=2, routed)           0.417     9.727    Control/PC/f[6].FF/A_reg_4
+    SLICE_X0Y152         LUT5 (Prop_lut5_I4_O)        0.043     9.770 r  Control/PC/f[6].FF/A_i_2__252/O
+                         net (fo=2, routed)           0.224     9.993    Control/PC/f[7].FF/A_reg_4
+    SLICE_X0Y153         LUT5 (Prop_lut5_I4_O)        0.043    10.036 r  Control/PC/f[7].FF/A_i_2__251/O
+                         net (fo=2, routed)           0.224    10.260    Control/PC/f[8].FF/A_reg_4
+    SLICE_X0Y154         LUT5 (Prop_lut5_I4_O)        0.043    10.303 r  Control/PC/f[8].FF/A_i_2__250/O
+                         net (fo=3, routed)           0.435    10.738    Control/PC/f[10].FF/A_reg_4
+    SLICE_X0Y159         LUT5 (Prop_lut5_I4_O)        0.053    10.791 r  Control/PC/f[10].FF/A_i_2__248/O
+                         net (fo=5, routed)           0.436    11.226    Control/PC/f[14].FF/A_i_2__242_1
+    SLICE_X0Y163         LUT6 (Prop_lut6_I5_O)        0.131    11.357 r  Control/PC/f[14].FF/A_i_3__35/O
+                         net (fo=2, routed)           0.634    11.991    Control/PC/f[18].FF/A_i_2__239_1
+    SLICE_X0Y166         LUT6 (Prop_lut6_I5_O)        0.043    12.034 r  Control/PC/f[18].FF/A_i_3__34/O
+                         net (fo=2, routed)           0.581    12.615    Control/PC/f[22].FF/A_i_2__236_1
+    SLICE_X0Y169         LUT6 (Prop_lut6_I5_O)        0.043    12.658 r  Control/PC/f[22].FF/A_i_3__33/O
+                         net (fo=2, routed)           0.515    13.173    Control/PC/f[25].FF/A_reg_4
+    SLICE_X0Y173         LUT6 (Prop_lut6_I5_O)        0.043    13.216 r  Control/PC/f[25].FF/A_i_2__236/O
+                         net (fo=2, routed)           0.303    13.519    Control/PC/f[28].FF/A_reg_4
+    SLICE_X0Y174         LUT6 (Prop_lut6_I5_O)        0.043    13.562 r  Control/PC/f[28].FF/A_i_2__233/O
+                         net (fo=1, routed)           0.457    14.019    Control/PC/f[28].FF/A_i_2__233_n_0
+    SLICE_X1Y174         LUT6 (Prop_lut6_I2_O)        0.043    14.062 r  Control/PC/f[28].FF/A_i_1__258/O
+                         net (fo=1, routed)           0.000    14.062    Control/PC/f[29].FF/A_reg_1
+    SLICE_X1Y174         FDRE                                         r  Control/PC/f[29].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Instr_in[3]
+                            (input port)
+  Destination:            Datapath/Register_file/regs[5].reg/f[27].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.018ns  (logic 5.314ns (37.911%)  route 8.703ns (62.089%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=2 LUT4=1 LUT6=5 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C24                                               0.000     0.000 r  Instr_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    Instr_in[3]
+    C24                  IBUF (Prop_ibuf_I_O)         0.790     0.790 r  Instr_in_IBUF[3]_inst/O
+                         net (fo=130, routed)         4.236     5.026    Datapath/Register_file/regs[5].reg/f[14].FF/Instr_in_IBUF[1]
+    SLICE_X4Y63          LUT4 (Prop_lut4_I1_O)        0.050     5.076 r  Datapath/Register_file/regs[5].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_5/O
+                         net (fo=1, routed)           0.260     5.336    Datapath/Register_file/regs[7].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          LUT6 (Prop_lut6_I5_O)        0.126     5.462 r  Datapath/Register_file/regs[7].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_3/O
+                         net (fo=1, routed)           0.000     5.462    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          MUXF7 (Prop_muxf7_I1_O)      0.106     5.568 r  Datapath/Register_file/regs[3].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_1/O
+                         net (fo=14, routed)          1.171     6.739    Datapath/ALU/arithmetic/mul/full_result__1_0[14]
+    DSP48_X0Y27          DSP48E1 (Prop_dsp48e1_A[14]_PCOUT[47])
+                                                      2.594     9.333 r  Datapath/ALU/arithmetic/mul/full_result__0/PCOUT[47]
+                         net (fo=1, routed)           0.000     9.333    Datapath/ALU/arithmetic/mul/full_result__0_n_106
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[2])
+                                                      0.938    10.271 r  Datapath/ALU/arithmetic/mul/full_result__1/P[2]
+                         net (fo=2, routed)           0.623    10.894    Datapath/ALU/arithmetic/mul/full_result__1_n_103
+    SLICE_X12Y71         LUT2 (Prop_lut2_I0_O)        0.043    10.937 r  Datapath/ALU/arithmetic/mul/full_result_carry_i_1/O
+                         net (fo=1, routed)           0.000    10.937    Datapath/ALU/arithmetic/mul/full_result_carry_i_1_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173    11.110 r  Datapath/ALU/arithmetic/mul/full_result_carry/CO[3]
+                         net (fo=1, routed)           0.000    11.110    Datapath/ALU/arithmetic/mul/full_result_carry_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.050    11.160 r  Datapath/ALU/arithmetic/mul/full_result_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.160    Datapath/ALU/arithmetic/mul/full_result_carry__0_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.147    11.307 r  Datapath/ALU/arithmetic/mul/full_result_carry__1/O[3]
+                         net (fo=1, routed)           0.388    11.696    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__3__0[1]
+    SLICE_X9Y73          LUT6 (Prop_lut6_I5_O)        0.120    11.816 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_9__11/O
+                         net (fo=1, routed)           0.471    12.287    Datapath/Register_file/regs[3].reg/f[26].FF/A_i_3__26_1
+    SLICE_X3Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.330 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_5__26/O
+                         net (fo=2, routed)           0.614    12.944    Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__26_0
+    SLICE_X0Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.987 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_3__26/O
+                         net (fo=8, routed)           0.597    13.584    Datapath/Register_file/regs[3].reg/f[27].FF/D_data[27]
+    SLICE_X0Y80          LUT6 (Prop_lut6_I0_O)        0.043    13.627 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__166/O
+                         net (fo=1, routed)           0.343    13.970    Datapath/Register_file/regs[3].reg/f[27].FF/regs[5].reg/enable_27
+    SLICE_X0Y80          LUT2 (Prop_lut2_I0_O)        0.048    14.018 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_1__163/O
+                         net (fo=1, routed)           0.000    14.018    Datapath/Register_file/regs[5].reg/f[27].FF/A_reg_3
+    SLICE_X0Y80          FDRE                                         r  Datapath/Register_file/regs[5].reg/f[27].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            Control/PC/f[23].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.005ns  (logic 1.536ns (10.967%)  route 12.469ns (89.033%))
+  Logic Levels:           17  (IBUF=1 LUT2=1 LUT3=1 LUT5=8 LUT6=6)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P19                                               0.000     0.000 r  rst (IN)
+                         net (fo=0)                   0.000     0.000    rst
+    P19                  IBUF (Prop_ibuf_I_O)         0.750     0.750 r  rst_IBUF_inst/O
+                         net (fo=604, routed)         4.411     5.161    Datapath/ALU/flags_register/f[2].FF/rst_IBUF
+    SLICE_X0Y77          LUT5 (Prop_lut5_I2_O)        0.043     5.204 r  Datapath/ALU/flags_register/f[2].FF/A_i_4__32/O
+                         net (fo=1, routed)           1.198     6.403    Datapath/ALU/flags_register/f[2].FF/A_i_4__32_n_0
+    SLICE_X1Y112         LUT3 (Prop_lut3_I2_O)        0.043     6.446 r  Datapath/ALU/flags_register/f[2].FF/A_i_3__37/O
+                         net (fo=17, routed)          1.246     7.691    Control/PC/f[2].FF/A_reg_2
+    SLICE_X0Y150         LUT6 (Prop_lut6_I1_O)        0.043     7.734 f  Control/PC/f[2].FF/A_i_2__256/O
+                         net (fo=2, routed)           0.780     8.514    Control/PC/f[3].FF/A_reg_4
+    SLICE_X1Y150         LUT5 (Prop_lut5_I4_O)        0.043     8.557 r  Control/PC/f[3].FF/A_i_2__255/O
+                         net (fo=2, routed)           0.441     8.998    Control/PC/f[4].FF/A_reg_4
+    SLICE_X0Y151         LUT5 (Prop_lut5_I4_O)        0.043     9.041 r  Control/PC/f[4].FF/A_i_2__254/O
+                         net (fo=2, routed)           0.226     9.266    Control/PC/f[5].FF/A_reg_4
+    SLICE_X0Y151         LUT5 (Prop_lut5_I4_O)        0.043     9.309 r  Control/PC/f[5].FF/A_i_2__253/O
+                         net (fo=2, routed)           0.417     9.727    Control/PC/f[6].FF/A_reg_4
+    SLICE_X0Y152         LUT5 (Prop_lut5_I4_O)        0.043     9.770 r  Control/PC/f[6].FF/A_i_2__252/O
+                         net (fo=2, routed)           0.224     9.993    Control/PC/f[7].FF/A_reg_4
+    SLICE_X0Y153         LUT5 (Prop_lut5_I4_O)        0.043    10.036 r  Control/PC/f[7].FF/A_i_2__251/O
+                         net (fo=2, routed)           0.224    10.260    Control/PC/f[8].FF/A_reg_4
+    SLICE_X0Y154         LUT5 (Prop_lut5_I4_O)        0.043    10.303 r  Control/PC/f[8].FF/A_i_2__250/O
+                         net (fo=3, routed)           0.435    10.738    Control/PC/f[10].FF/A_reg_4
+    SLICE_X0Y159         LUT5 (Prop_lut5_I4_O)        0.053    10.791 r  Control/PC/f[10].FF/A_i_2__248/O
+                         net (fo=5, routed)           0.436    11.226    Control/PC/f[14].FF/A_i_2__242_1
+    SLICE_X0Y163         LUT6 (Prop_lut6_I5_O)        0.131    11.357 r  Control/PC/f[14].FF/A_i_3__35/O
+                         net (fo=2, routed)           0.337    11.695    Control/PC/f[17].FF/A_reg_4
+    SLICE_X0Y165         LUT6 (Prop_lut6_I5_O)        0.043    11.738 r  Control/PC/f[17].FF/A_i_2__242/O
+                         net (fo=2, routed)           0.260    11.998    Control/PC/f[20].FF/A_reg_4
+    SLICE_X0Y168         LUT6 (Prop_lut6_I5_O)        0.043    12.041 r  Control/PC/f[20].FF/A_i_2__240/O
+                         net (fo=3, routed)           0.095    12.136    Control/PC/f[20].FF/A_reg_0
+    SLICE_X0Y168         LUT6 (Prop_lut6_I0_O)        0.043    12.179 r  Control/PC/f[20].FF/A_i_3__32/O
+                         net (fo=1, routed)           0.658    12.837    Control/PC/f[20].FF/A_i_3__32_n_0
+    SLICE_X1Y149         LUT6 (Prop_lut6_I5_O)        0.043    12.880 r  Control/PC/f[20].FF/A_i_2__229/O
+                         net (fo=1, routed)           0.888    13.767    Control/PC/f[20].FF/PC_in[23]
+    SLICE_X1Y168         LUT2 (Prop_lut2_I0_O)        0.043    13.810 r  Control/PC/f[20].FF/A_i_1__263/O
+                         net (fo=1, routed)           0.195    14.005    Control/PC/f[23].FF/A_reg_1
+    SLICE_X1Y168         FDRE                                         r  Control/PC/f[23].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            Control/PC/f[31].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.004ns  (logic 1.536ns (10.968%)  route 12.468ns (89.032%))
+  Logic Levels:           17  (IBUF=1 LUT3=1 LUT5=8 LUT6=7)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P19                                               0.000     0.000 r  rst (IN)
+                         net (fo=0)                   0.000     0.000    rst
+    P19                  IBUF (Prop_ibuf_I_O)         0.750     0.750 r  rst_IBUF_inst/O
+                         net (fo=604, routed)         4.411     5.161    Datapath/ALU/flags_register/f[2].FF/rst_IBUF
+    SLICE_X0Y77          LUT5 (Prop_lut5_I2_O)        0.043     5.204 r  Datapath/ALU/flags_register/f[2].FF/A_i_4__32/O
+                         net (fo=1, routed)           1.198     6.403    Datapath/ALU/flags_register/f[2].FF/A_i_4__32_n_0
+    SLICE_X1Y112         LUT3 (Prop_lut3_I2_O)        0.043     6.446 r  Datapath/ALU/flags_register/f[2].FF/A_i_3__37/O
+                         net (fo=17, routed)          1.246     7.691    Control/PC/f[2].FF/A_reg_2
+    SLICE_X0Y150         LUT6 (Prop_lut6_I1_O)        0.043     7.734 f  Control/PC/f[2].FF/A_i_2__256/O
+                         net (fo=2, routed)           0.780     8.514    Control/PC/f[3].FF/A_reg_4
+    SLICE_X1Y150         LUT5 (Prop_lut5_I4_O)        0.043     8.557 r  Control/PC/f[3].FF/A_i_2__255/O
+                         net (fo=2, routed)           0.441     8.998    Control/PC/f[4].FF/A_reg_4
+    SLICE_X0Y151         LUT5 (Prop_lut5_I4_O)        0.043     9.041 r  Control/PC/f[4].FF/A_i_2__254/O
+                         net (fo=2, routed)           0.226     9.266    Control/PC/f[5].FF/A_reg_4
+    SLICE_X0Y151         LUT5 (Prop_lut5_I4_O)        0.043     9.309 r  Control/PC/f[5].FF/A_i_2__253/O
+                         net (fo=2, routed)           0.417     9.727    Control/PC/f[6].FF/A_reg_4
+    SLICE_X0Y152         LUT5 (Prop_lut5_I4_O)        0.043     9.770 r  Control/PC/f[6].FF/A_i_2__252/O
+                         net (fo=2, routed)           0.224     9.993    Control/PC/f[7].FF/A_reg_4
+    SLICE_X0Y153         LUT5 (Prop_lut5_I4_O)        0.043    10.036 r  Control/PC/f[7].FF/A_i_2__251/O
+                         net (fo=2, routed)           0.224    10.260    Control/PC/f[8].FF/A_reg_4
+    SLICE_X0Y154         LUT5 (Prop_lut5_I4_O)        0.043    10.303 r  Control/PC/f[8].FF/A_i_2__250/O
+                         net (fo=3, routed)           0.435    10.738    Control/PC/f[10].FF/A_reg_4
+    SLICE_X0Y159         LUT5 (Prop_lut5_I4_O)        0.053    10.791 r  Control/PC/f[10].FF/A_i_2__248/O
+                         net (fo=5, routed)           0.436    11.226    Control/PC/f[14].FF/A_i_2__242_1
+    SLICE_X0Y163         LUT6 (Prop_lut6_I5_O)        0.131    11.357 r  Control/PC/f[14].FF/A_i_3__35/O
+                         net (fo=2, routed)           0.634    11.991    Control/PC/f[18].FF/A_i_2__239_1
+    SLICE_X0Y166         LUT6 (Prop_lut6_I5_O)        0.043    12.034 r  Control/PC/f[18].FF/A_i_3__34/O
+                         net (fo=2, routed)           0.581    12.615    Control/PC/f[22].FF/A_i_2__236_1
+    SLICE_X0Y169         LUT6 (Prop_lut6_I5_O)        0.043    12.658 r  Control/PC/f[22].FF/A_i_3__33/O
+                         net (fo=2, routed)           0.520    13.178    Control/PC/f[26].FF/A_reg_5
+    SLICE_X0Y173         LUT6 (Prop_lut6_I5_O)        0.043    13.221 r  Control/PC/f[26].FF/A_i_2__235/O
+                         net (fo=3, routed)           0.472    13.693    Control/PC/f[30].FF/A_reg_5
+    SLICE_X0Y175         LUT6 (Prop_lut6_I5_O)        0.043    13.736 r  Control/PC/f[30].FF/A_i_2__231/O
+                         net (fo=1, routed)           0.224    13.961    Control/PC/f[30].FF/A_i_2__231_n_0
+    SLICE_X0Y175         LUT6 (Prop_lut6_I2_O)        0.043    14.004 r  Control/PC/f[30].FF/A_i_1__260/O
+                         net (fo=1, routed)           0.000    14.004    Control/PC/f[31].FF/A_reg_0
+    SLICE_X0Y175         FDRE                                         r  Control/PC/f[31].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Instr_in[3]
+                            (input port)
+  Destination:            Datapath/Register_file/regs[2].reg/f[27].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.986ns  (logic 5.309ns (37.959%)  route 8.677ns (62.041%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=2 LUT4=1 LUT6=5 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C24                                               0.000     0.000 r  Instr_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    Instr_in[3]
+    C24                  IBUF (Prop_ibuf_I_O)         0.790     0.790 r  Instr_in_IBUF[3]_inst/O
+                         net (fo=130, routed)         4.236     5.026    Datapath/Register_file/regs[5].reg/f[14].FF/Instr_in_IBUF[1]
+    SLICE_X4Y63          LUT4 (Prop_lut4_I1_O)        0.050     5.076 r  Datapath/Register_file/regs[5].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_5/O
+                         net (fo=1, routed)           0.260     5.336    Datapath/Register_file/regs[7].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          LUT6 (Prop_lut6_I5_O)        0.126     5.462 r  Datapath/Register_file/regs[7].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_3/O
+                         net (fo=1, routed)           0.000     5.462    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          MUXF7 (Prop_muxf7_I1_O)      0.106     5.568 r  Datapath/Register_file/regs[3].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_1/O
+                         net (fo=14, routed)          1.171     6.739    Datapath/ALU/arithmetic/mul/full_result__1_0[14]
+    DSP48_X0Y27          DSP48E1 (Prop_dsp48e1_A[14]_PCOUT[47])
+                                                      2.594     9.333 r  Datapath/ALU/arithmetic/mul/full_result__0/PCOUT[47]
+                         net (fo=1, routed)           0.000     9.333    Datapath/ALU/arithmetic/mul/full_result__0_n_106
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[2])
+                                                      0.938    10.271 r  Datapath/ALU/arithmetic/mul/full_result__1/P[2]
+                         net (fo=2, routed)           0.623    10.894    Datapath/ALU/arithmetic/mul/full_result__1_n_103
+    SLICE_X12Y71         LUT2 (Prop_lut2_I0_O)        0.043    10.937 r  Datapath/ALU/arithmetic/mul/full_result_carry_i_1/O
+                         net (fo=1, routed)           0.000    10.937    Datapath/ALU/arithmetic/mul/full_result_carry_i_1_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173    11.110 r  Datapath/ALU/arithmetic/mul/full_result_carry/CO[3]
+                         net (fo=1, routed)           0.000    11.110    Datapath/ALU/arithmetic/mul/full_result_carry_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.050    11.160 r  Datapath/ALU/arithmetic/mul/full_result_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.160    Datapath/ALU/arithmetic/mul/full_result_carry__0_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.147    11.307 r  Datapath/ALU/arithmetic/mul/full_result_carry__1/O[3]
+                         net (fo=1, routed)           0.388    11.696    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__3__0[1]
+    SLICE_X9Y73          LUT6 (Prop_lut6_I5_O)        0.120    11.816 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_9__11/O
+                         net (fo=1, routed)           0.471    12.287    Datapath/Register_file/regs[3].reg/f[26].FF/A_i_3__26_1
+    SLICE_X3Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.330 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_5__26/O
+                         net (fo=2, routed)           0.614    12.944    Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__26_0
+    SLICE_X0Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.987 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_3__26/O
+                         net (fo=8, routed)           0.482    13.469    Datapath/Register_file/regs[3].reg/f[27].FF/D_data[27]
+    SLICE_X0Y83          LUT6 (Prop_lut6_I0_O)        0.043    13.512 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_2__82/O
+                         net (fo=1, routed)           0.431    13.943    Datapath/Register_file/regs[3].reg/f[27].FF/regs[2].reg/enable_27
+    SLICE_X0Y83          LUT2 (Prop_lut2_I0_O)        0.043    13.986 r  Datapath/Register_file/regs[3].reg/f[27].FF/A_i_1__67/O
+                         net (fo=1, routed)           0.000    13.986    Datapath/Register_file/regs[2].reg/f[27].FF/A_reg_0
+    SLICE_X0Y83          FDRE                                         r  Datapath/Register_file/regs[2].reg/f[27].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Instr_in[3]
+                            (input port)
+  Destination:            Datapath/Register_file/regs[5].reg/f[26].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.976ns  (logic 5.276ns (37.752%)  route 8.700ns (62.248%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=2 LUT4=1 LUT6=5 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C24                                               0.000     0.000 r  Instr_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    Instr_in[3]
+    C24                  IBUF (Prop_ibuf_I_O)         0.790     0.790 r  Instr_in_IBUF[3]_inst/O
+                         net (fo=130, routed)         4.236     5.026    Datapath/Register_file/regs[5].reg/f[14].FF/Instr_in_IBUF[1]
+    SLICE_X4Y63          LUT4 (Prop_lut4_I1_O)        0.050     5.076 r  Datapath/Register_file/regs[5].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_5/O
+                         net (fo=1, routed)           0.260     5.336    Datapath/Register_file/regs[7].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          LUT6 (Prop_lut6_I5_O)        0.126     5.462 r  Datapath/Register_file/regs[7].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_3/O
+                         net (fo=1, routed)           0.000     5.462    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          MUXF7 (Prop_muxf7_I1_O)      0.106     5.568 r  Datapath/Register_file/regs[3].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_1/O
+                         net (fo=14, routed)          1.171     6.739    Datapath/ALU/arithmetic/mul/full_result__1_0[14]
+    DSP48_X0Y27          DSP48E1 (Prop_dsp48e1_A[14]_PCOUT[47])
+                                                      2.594     9.333 r  Datapath/ALU/arithmetic/mul/full_result__0/PCOUT[47]
+                         net (fo=1, routed)           0.000     9.333    Datapath/ALU/arithmetic/mul/full_result__0_n_106
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[2])
+                                                      0.938    10.271 r  Datapath/ALU/arithmetic/mul/full_result__1/P[2]
+                         net (fo=2, routed)           0.623    10.894    Datapath/ALU/arithmetic/mul/full_result__1_n_103
+    SLICE_X12Y71         LUT2 (Prop_lut2_I0_O)        0.043    10.937 r  Datapath/ALU/arithmetic/mul/full_result_carry_i_1/O
+                         net (fo=1, routed)           0.000    10.937    Datapath/ALU/arithmetic/mul/full_result_carry_i_1_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173    11.110 r  Datapath/ALU/arithmetic/mul/full_result_carry/CO[3]
+                         net (fo=1, routed)           0.000    11.110    Datapath/ALU/arithmetic/mul/full_result_carry_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.050    11.160 r  Datapath/ALU/arithmetic/mul/full_result_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.160    Datapath/ALU/arithmetic/mul/full_result_carry__0_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.108    11.268 r  Datapath/ALU/arithmetic/mul/full_result_carry__1/O[2]
+                         net (fo=1, routed)           0.343    11.611    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__3__0[0]
+    SLICE_X10Y75         LUT6 (Prop_lut6_I5_O)        0.126    11.737 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_8__9/O
+                         net (fo=1, routed)           0.424    12.161    Datapath/Register_file/regs[3].reg/f[25].FF/A_i_3__25_2
+    SLICE_X2Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.204 f  Datapath/Register_file/regs[3].reg/f[25].FF/A_i_5__25/O
+                         net (fo=2, routed)           0.510    12.714    Datapath/Register_file/regs[3].reg/f[26].FF/A_i_2__25_0
+    SLICE_X0Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.757 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_3__25/O
+                         net (fo=8, routed)           0.777    13.534    Datapath/Register_file/regs[3].reg/f[26].FF/D_data[26]
+    SLICE_X10Y82         LUT6 (Prop_lut6_I0_O)        0.043    13.577 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_2__165/O
+                         net (fo=1, routed)           0.356    13.933    Datapath/Register_file/regs[3].reg/f[26].FF/regs[5].reg/enable_26
+    SLICE_X10Y82         LUT2 (Prop_lut2_I0_O)        0.043    13.976 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_1__164/O
+                         net (fo=1, routed)           0.000    13.976    Datapath/Register_file/regs[5].reg/f[26].FF/A_reg_3
+    SLICE_X10Y82         FDRE                                         r  Datapath/Register_file/regs[5].reg/f[26].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Instr_in[3]
+                            (input port)
+  Destination:            Datapath/Register_file/regs[1].reg/f[26].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.950ns  (logic 5.286ns (37.894%)  route 8.664ns (62.106%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=2 LUT4=1 LUT6=5 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C24                                               0.000     0.000 r  Instr_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    Instr_in[3]
+    C24                  IBUF (Prop_ibuf_I_O)         0.790     0.790 r  Instr_in_IBUF[3]_inst/O
+                         net (fo=130, routed)         4.236     5.026    Datapath/Register_file/regs[5].reg/f[14].FF/Instr_in_IBUF[1]
+    SLICE_X4Y63          LUT4 (Prop_lut4_I1_O)        0.050     5.076 r  Datapath/Register_file/regs[5].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_5/O
+                         net (fo=1, routed)           0.260     5.336    Datapath/Register_file/regs[7].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          LUT6 (Prop_lut6_I5_O)        0.126     5.462 r  Datapath/Register_file/regs[7].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_3/O
+                         net (fo=1, routed)           0.000     5.462    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__1
+    SLICE_X3Y64          MUXF7 (Prop_muxf7_I1_O)      0.106     5.568 r  Datapath/Register_file/regs[3].reg/f[14].FF/Mem_data_out_OBUF[14]_inst_i_1/O
+                         net (fo=14, routed)          1.171     6.739    Datapath/ALU/arithmetic/mul/full_result__1_0[14]
+    DSP48_X0Y27          DSP48E1 (Prop_dsp48e1_A[14]_PCOUT[47])
+                                                      2.594     9.333 r  Datapath/ALU/arithmetic/mul/full_result__0/PCOUT[47]
+                         net (fo=1, routed)           0.000     9.333    Datapath/ALU/arithmetic/mul/full_result__0_n_106
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[2])
+                                                      0.938    10.271 r  Datapath/ALU/arithmetic/mul/full_result__1/P[2]
+                         net (fo=2, routed)           0.623    10.894    Datapath/ALU/arithmetic/mul/full_result__1_n_103
+    SLICE_X12Y71         LUT2 (Prop_lut2_I0_O)        0.043    10.937 r  Datapath/ALU/arithmetic/mul/full_result_carry_i_1/O
+                         net (fo=1, routed)           0.000    10.937    Datapath/ALU/arithmetic/mul/full_result_carry_i_1_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173    11.110 r  Datapath/ALU/arithmetic/mul/full_result_carry/CO[3]
+                         net (fo=1, routed)           0.000    11.110    Datapath/ALU/arithmetic/mul/full_result_carry_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.050    11.160 r  Datapath/ALU/arithmetic/mul/full_result_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.160    Datapath/ALU/arithmetic/mul/full_result_carry__0_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.108    11.268 r  Datapath/ALU/arithmetic/mul/full_result_carry__1/O[2]
+                         net (fo=1, routed)           0.343    11.611    Datapath/Register_file/regs[3].reg/f[14].FF/full_result__3__0[0]
+    SLICE_X10Y75         LUT6 (Prop_lut6_I5_O)        0.126    11.737 r  Datapath/Register_file/regs[3].reg/f[14].FF/A_i_8__9/O
+                         net (fo=1, routed)           0.424    12.161    Datapath/Register_file/regs[3].reg/f[25].FF/A_i_3__25_2
+    SLICE_X2Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.204 f  Datapath/Register_file/regs[3].reg/f[25].FF/A_i_5__25/O
+                         net (fo=2, routed)           0.510    12.714    Datapath/Register_file/regs[3].reg/f[26].FF/A_i_2__25_0
+    SLICE_X0Y74          LUT6 (Prop_lut6_I5_O)        0.043    12.757 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_3__25/O
+                         net (fo=8, routed)           0.760    13.517    Datapath/Register_file/regs[3].reg/f[26].FF/D_data[26]
+    SLICE_X11Y82         LUT6 (Prop_lut6_I0_O)        0.043    13.560 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_2__53/O
+                         net (fo=1, routed)           0.337    13.897    Datapath/Register_file/regs[3].reg/f[26].FF/regs[1].reg/enable_26
+    SLICE_X11Y82         LUT2 (Prop_lut2_I0_O)        0.053    13.950 r  Datapath/Register_file/regs[3].reg/f[26].FF/A_i_1__36/O
+                         net (fo=1, routed)           0.000    13.950    Datapath/Register_file/regs[1].reg/f[26].FF/A_reg_3
+    SLICE_X11Y82         FDRE                                         r  Datapath/Register_file/regs[1].reg/f[26].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 Datapath/Register_file/regs[1].reg/f[31].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Datapath/Register_file/regs[1].reg/f[31].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.237ns  (logic 0.128ns (54.115%)  route 0.109ns (45.885%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y77          FDRE                         0.000     0.000 r  Datapath/Register_file/regs[1].reg/f[31].FF/A_reg/C
+    SLICE_X1Y77          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Datapath/Register_file/regs[1].reg/f[31].FF/A_reg/Q
+                         net (fo=3, routed)           0.109     0.209    Datapath/Register_file/regs[3].reg/f[31].FF/A_reg_17[0]
+    SLICE_X1Y77          LUT6 (Prop_lut6_I4_O)        0.028     0.237 r  Datapath/Register_file/regs[3].reg/f[31].FF/A_i_1__34/O
+                         net (fo=1, routed)           0.000     0.237    Datapath/Register_file/regs[1].reg/f[31].FF/A_reg_3
+    SLICE_X1Y77          FDRE                                         r  Datapath/Register_file/regs[1].reg/f[31].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Control/PC/f[28].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Control/PC/f[28].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.253ns  (logic 0.128ns (50.502%)  route 0.125ns (49.498%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y174         FDRE                         0.000     0.000 r  Control/PC/f[28].FF/A_reg/C
+    SLICE_X0Y174         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Control/PC/f[28].FF/A_reg/Q
+                         net (fo=4, routed)           0.125     0.225    Control/PC/f[27].FF/p_0_in80_in
+    SLICE_X0Y174         LUT6 (Prop_lut6_I3_O)        0.028     0.253 r  Control/PC/f[27].FF/A_i_1__257/O
+                         net (fo=1, routed)           0.000     0.253    Control/PC/f[28].FF/A_reg_1
+    SLICE_X0Y174         FDRE                                         r  Control/PC/f[28].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Datapath/ALU/flags_register/f[2].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Datapath/ALU/flags_register/f[2].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.259ns  (logic 0.128ns (49.495%)  route 0.131ns (50.505%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y75          FDRE                         0.000     0.000 r  Datapath/ALU/flags_register/f[2].FF/A_reg/C
+    SLICE_X1Y75          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Datapath/ALU/flags_register/f[2].FF/A_reg/Q
+                         net (fo=2, routed)           0.131     0.231    Datapath/Register_file/regs[3].reg/f[28].FF/A_reg_11[0]
+    SLICE_X1Y75          LUT6 (Prop_lut6_I4_O)        0.028     0.259 r  Datapath/Register_file/regs[3].reg/f[28].FF/A_i_1__261/O
+                         net (fo=1, routed)           0.000     0.259    Datapath/ALU/flags_register/f[2].FF/A_reg_1
+    SLICE_X1Y75          FDRE                                         r  Datapath/ALU/flags_register/f[2].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Control/PC/f[14].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Control/PC/f[14].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.259ns  (logic 0.128ns (49.492%)  route 0.131ns (50.508%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y164         FDRE                         0.000     0.000 r  Control/PC/f[14].FF/A_reg/C
+    SLICE_X1Y164         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Control/PC/f[14].FF/A_reg/Q
+                         net (fo=4, routed)           0.131     0.231    Control/PC/f[13].FF/p_0_in38_in
+    SLICE_X1Y164         LUT6 (Prop_lut6_I3_O)        0.028     0.259 r  Control/PC/f[13].FF/A_i_1__278/O
+                         net (fo=1, routed)           0.000     0.259    Control/PC/f[14].FF/A_reg_1
+    SLICE_X1Y164         FDRE                                         r  Control/PC/f[14].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Datapath/Register_file/regs[1].reg/f[28].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Datapath/Register_file/regs[1].reg/f[28].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.259ns  (logic 0.128ns (49.492%)  route 0.131ns (50.508%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y78          FDRE                         0.000     0.000 r  Datapath/Register_file/regs[1].reg/f[28].FF/A_reg/C
+    SLICE_X1Y78          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Datapath/Register_file/regs[1].reg/f[28].FF/A_reg/Q
+                         net (fo=3, routed)           0.131     0.231    Datapath/Register_file/regs[3].reg/f[28].FF/A_reg_20[0]
+    SLICE_X1Y78          LUT4 (Prop_lut4_I2_O)        0.028     0.259 r  Datapath/Register_file/regs[3].reg/f[28].FF/A_i_1__31/O
+                         net (fo=1, routed)           0.000     0.259    Datapath/Register_file/regs[1].reg/f[28].FF/A_reg_3
+    SLICE_X1Y78          FDRE                                         r  Datapath/Register_file/regs[1].reg/f[28].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Datapath/Register_file/regs[6].reg/f[29].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Datapath/Register_file/regs[6].reg/f[29].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.259ns  (logic 0.128ns (49.492%)  route 0.131ns (50.508%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y76          FDRE                         0.000     0.000 r  Datapath/Register_file/regs[6].reg/f[29].FF/A_reg/C
+    SLICE_X5Y76          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Datapath/Register_file/regs[6].reg/f[29].FF/A_reg/Q
+                         net (fo=3, routed)           0.131     0.231    Datapath/Register_file/regs[3].reg/f[29].FF/ff_states_3[0]
+    SLICE_X5Y76          LUT4 (Prop_lut4_I2_O)        0.028     0.259 r  Datapath/Register_file/regs[3].reg/f[29].FF/A_i_1__192/O
+                         net (fo=1, routed)           0.000     0.259    Datapath/Register_file/regs[6].reg/f[29].FF/A_reg_0
+    SLICE_X5Y76          FDRE                                         r  Datapath/Register_file/regs[6].reg/f[29].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Control/PC/f[11].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Control/PC/f[11].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.262ns  (logic 0.128ns (48.833%)  route 0.134ns (51.167%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y162         FDRE                         0.000     0.000 r  Control/PC/f[11].FF/A_reg/C
+    SLICE_X0Y162         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Control/PC/f[11].FF/A_reg/Q
+                         net (fo=5, routed)           0.134     0.234    Control/PC/f[10].FF/p_0_in29_in
+    SLICE_X0Y162         LUT6 (Prop_lut6_I3_O)        0.028     0.262 r  Control/PC/f[10].FF/A_i_1__275/O
+                         net (fo=1, routed)           0.000     0.262    Control/PC/f[11].FF/A_reg_1
+    SLICE_X0Y162         FDRE                                         r  Control/PC/f[11].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Control/PC/f[13].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Control/PC/f[13].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.262ns  (logic 0.128ns (48.833%)  route 0.134ns (51.167%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y163         FDRE                         0.000     0.000 r  Control/PC/f[13].FF/A_reg/C
+    SLICE_X0Y163         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Control/PC/f[13].FF/A_reg/Q
+                         net (fo=3, routed)           0.134     0.234    Control/PC/f[12].FF/p_0_in35_in
+    SLICE_X0Y163         LUT6 (Prop_lut6_I3_O)        0.028     0.262 r  Control/PC/f[12].FF/A_i_1__277/O
+                         net (fo=1, routed)           0.000     0.262    Control/PC/f[13].FF/A_reg_3
+    SLICE_X0Y163         FDRE                                         r  Control/PC/f[13].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Control/PC/f[25].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Control/PC/f[25].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.262ns  (logic 0.128ns (48.833%)  route 0.134ns (51.167%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y172         FDRE                         0.000     0.000 r  Control/PC/f[25].FF/A_reg/C
+    SLICE_X0Y172         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Control/PC/f[25].FF/A_reg/Q
+                         net (fo=4, routed)           0.134     0.234    Control/PC/f[24].FF/p_0_in71_in
+    SLICE_X0Y172         LUT6 (Prop_lut6_I3_O)        0.028     0.262 r  Control/PC/f[24].FF/A_i_1__286/O
+                         net (fo=1, routed)           0.000     0.262    Control/PC/f[25].FF/A_reg_2
+    SLICE_X0Y172         FDRE                                         r  Control/PC/f[25].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Control/PC/f[31].FF/A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Control/PC/f[31].FF/A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.262ns  (logic 0.128ns (48.833%)  route 0.134ns (51.167%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y175         FDRE                         0.000     0.000 r  Control/PC/f[31].FF/A_reg/C
+    SLICE_X0Y175         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  Control/PC/f[31].FF/A_reg/Q
+                         net (fo=2, routed)           0.134     0.234    Control/PC/f[30].FF/p_0_in89_in
+    SLICE_X0Y175         LUT6 (Prop_lut6_I3_O)        0.028     0.262 r  Control/PC/f[30].FF/A_i_1__260/O
+                         net (fo=1, routed)           0.000     0.262    Control/PC/f[31].FF/A_reg_0
+    SLICE_X0Y175         FDRE                                         r  Control/PC/f[31].FF/A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

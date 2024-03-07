@@ -1,0 +1,1369 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Mar  5 21:35:00 2024
+# Process ID: 21264
+# Current directory: D:/Documents/xilinx/CPU-ALU-stuff
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2712 D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.xpr
+# Log file: D:/Documents/xilinx/CPU-ALU-stuff/vivado.log
+# Journal file: D:/Documents/xilinx/CPU-ALU-stuff\vivado.jou
+# Running On: DESKTOP-SMT4I8Q, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 12, Host memory: 17090 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/XILINX/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1523.656 ; gain = 258.844
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_tb'
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:70]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:72]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:74]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:76]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:78]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:80]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:82]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:84]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1580.027 ; gain = 45.340
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 ns
+run 100 ns
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1582.270 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 ns
+run 100 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_tb'
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:70]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:72]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:74]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:76]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:78]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:80]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:82]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:84]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1586.750 ; gain = 2.617
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\ALU.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\ALU.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_tb'
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:70]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:72]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:74]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:76]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:78]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:80]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:82]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1586.750 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1601.711 ; gain = 2.559
+save_wave_config {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+run 100 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1602.273 ; gain = 0.000
+save_wave_config {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2671.852 ; gain = 0.000
+run all
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run all
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 2000 ns
+save_wave_config {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_tb'
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:70]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:72]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:74]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:76]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:78]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:80]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sim_2/new/CPU_tb.vhd:82]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 2000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sim_2\new\CPU_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 2000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -top CPU -part xc7k70tfbv676-3 -lint 
+Command: synth_design -top CPU -part xc7k70tfbv676-3 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5488
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+WARNING: [Synth 8-9112] actual for formal port 'k' is neither a static name nor a globally static expression [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'CPU' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Control' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+	Parameter K bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'JK_FF' [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'JK_FF' (1#1) [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (2#1) [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'nto1mux' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 1 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux' (3#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'nbyfouradder' [D:/Documents/xilinx/CPU-ALU-stuff/fourbyfouradder.vhd:41]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'carrylookahead4bit' [D:/Documents/xilinx/CPU-ALU-stuff/carrylookahead-4bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'carrylookahead4bit' (4#1) [D:/Documents/xilinx/CPU-ALU-stuff/carrylookahead-4bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'nbyfouradder' (5#1) [D:/Documents/xilinx/CPU-ALU-stuff/fourbyfouradder.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd:37]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'arithmeticunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/arithmeticunit.vhd:22]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'nbitmultiplier' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd:41]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nbitmultiplier' (7#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'shiftunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/shiftunit.vhd:42]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftunit' (8#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/shiftunit.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'nto1mux__parameterized0' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 2 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux__parameterized0' (8#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'arithmeticunit' (9#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/arithmeticunit.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'logicunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/logicunit.vhd:18]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logicunit' (10#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/logicunit.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'shift_register__parameterized0' [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+	Parameter K bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'shift_register__parameterized0' (10#1) [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'register_file' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/register_file.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'decoder' [D:/Documents/xilinx/CPU-ALU-stuff/decoder.vhd:38]
+	Parameter k bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'decoder' (12#1) [D:/Documents/xilinx/CPU-ALU-stuff/decoder.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'nto1mux__parameterized1' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 3 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux__parameterized1' (12#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (13#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/register_file.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (14#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (15#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd:18]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Mar  5 22:15:57 2024
+| Host         : DESKTOP-SMT4I8Q running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+--------------+----------+
+| Rule ID   | # Violations | # Waived |
++-----------+--------------+----------+
+| ASSIGN-5  | 1            | 0        |
+| ASSIGN-6  | 1            | 0        |
+| ASSIGN-10 | 1            | 0        |
++-----------+--------------+----------+
+
+
+WARNING: [Synth 37-87] [ASSIGN-5]All bits in array 'Branch_offset' are not set. First unset bit index is 31. 
+RTL Name 'Branch_offset', Hierarchy 'Control', File 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd', Line 28.
+WARNING: [Synth 37-102] [ASSIGN-10]All bits in IO 'Flags' are not read. First unused bit index is 0. 
+RTL Name 'Flags', Hierarchy 'Control', File 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd', Line 9.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'dummy' was assigned but not read. 
+RTL Name 'dummy', Hierarchy 'nbitmultiplier', File 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd', Line 42.
+INFO: [Synth 37-85] Total of 3 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\CPU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.srcs\sources_1\new\Control.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/XILINX/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj CPU_tb_vhdl.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=1,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookahead4bit [carrylookahead4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbyfouradder [\nbyfouradder(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.nbitmultiplier [\nbitmultiplier(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shiftunit [\shiftunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=2,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.arithmeticunit [\arithmeticunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.logicunit [\logicunit(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [\shift_register(k=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(k=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [\decoder(k=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nto1mux [\nto1mux(mux_size=3,bus_width=32...]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 2000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -top CPU -part xc7k70tfbv676-3 -lint 
+Command: synth_design -top CPU -part xc7k70tfbv676-3 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+WARNING: [Synth 8-9112] actual for formal port 'k' is neither a static name nor a globally static expression [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'CPU' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Control' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+	Parameter K bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'JK_FF' [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'JK_FF' (1#1) [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (2#1) [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'nto1mux' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 1 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux' (3#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'nbyfouradder' [D:/Documents/xilinx/CPU-ALU-stuff/fourbyfouradder.vhd:41]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'carrylookahead4bit' [D:/Documents/xilinx/CPU-ALU-stuff/carrylookahead-4bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'carrylookahead4bit' (4#1) [D:/Documents/xilinx/CPU-ALU-stuff/carrylookahead-4bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'nbyfouradder' (5#1) [D:/Documents/xilinx/CPU-ALU-stuff/fourbyfouradder.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd:37]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'arithmeticunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/arithmeticunit.vhd:22]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'nbitmultiplier' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd:41]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nbitmultiplier' (7#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'shiftunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/shiftunit.vhd:42]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftunit' (8#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/shiftunit.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'nto1mux__parameterized0' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 2 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux__parameterized0' (8#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'arithmeticunit' (9#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/arithmeticunit.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'logicunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/logicunit.vhd:18]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logicunit' (10#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/logicunit.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'shift_register__parameterized0' [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+	Parameter K bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'shift_register__parameterized0' (10#1) [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'register_file' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/register_file.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'decoder' [D:/Documents/xilinx/CPU-ALU-stuff/decoder.vhd:38]
+	Parameter k bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'decoder' (12#1) [D:/Documents/xilinx/CPU-ALU-stuff/decoder.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'nto1mux__parameterized1' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 3 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux__parameterized1' (12#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (13#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/register_file.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (14#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (15#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd:18]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Mar  5 22:17:04 2024
+| Host         : DESKTOP-SMT4I8Q running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+--------------+----------+
+| Rule ID   | # Violations | # Waived |
++-----------+--------------+----------+
+| ASSIGN-6  | 1            | 0        |
+| ASSIGN-10 | 1            | 0        |
++-----------+--------------+----------+
+
+
+WARNING: [Synth 37-102] [ASSIGN-10]All bits in IO 'Flags' are not read. First unused bit index is 0. 
+RTL Name 'Flags', Hierarchy 'Control', File 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd', Line 9.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'dummy' was assigned but not read. 
+RTL Name 'dummy', Hierarchy 'nbitmultiplier', File 'D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd', Line 42.
+INFO: [Synth 37-85] Total of 2 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/utils_1/imports/synth_1/Datapath.dcp with file D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.runs/synth_1/CPU.dcp
+launch_runs synth_1 -jobs 12
+[Tue Mar  5 22:17:17 2024] Launched synth_1...
+Run output will be captured here: D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Tue Mar  5 22:18:14 2024] Launched impl_1...
+Run output will be captured here: D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-3
+Top: CPU
+INFO: [Device 21-403] Loading part xc7k70tfbv676-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'k' is neither a static name nor a globally static expression [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'CPU' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Control' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+	Parameter K bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'JK_FF' [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'JK_FF' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/JK_FF.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'nto1mux' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 1 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'nbyfouradder' [D:/Documents/xilinx/CPU-ALU-stuff/fourbyfouradder.vhd:41]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'carrylookahead4bit' [D:/Documents/xilinx/CPU-ALU-stuff/carrylookahead-4bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'carrylookahead4bit' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/carrylookahead-4bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'nbyfouradder' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/fourbyfouradder.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Control' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Control.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd:37]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'arithmeticunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/arithmeticunit.vhd:22]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'nbitmultiplier' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd:41]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nbitmultiplier' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/nbitmultiplier.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'shiftunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/shiftunit.vhd:42]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftunit' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/shiftunit.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'nto1mux__parameterized0' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 2 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux__parameterized0' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'arithmeticunit' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/arithmeticunit.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'logicunit' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/logicunit.vhd:18]
+	Parameter k bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logicunit' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/logicunit.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'shift_register__parameterized0' [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+	Parameter K bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'shift_register__parameterized0' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/shift_register.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/ALU.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'register_file' [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/register_file.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'decoder' [D:/Documents/xilinx/CPU-ALU-stuff/decoder.vhd:38]
+	Parameter k bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'decoder' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/decoder.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'nto1mux__parameterized1' [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+	Parameter mux_size bound to: 3 - type: integer 
+	Parameter bus_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nto1mux__parameterized1' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/n-to-1-mux.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/register_file.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/Datapath.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (0#1) [D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.srcs/sources_1/new/CPU.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2674.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2674.879 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2674.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2684.488 ; gain = 9.609
+43 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2684.488 ; gain = 9.609
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  5 22:23:25 2024...

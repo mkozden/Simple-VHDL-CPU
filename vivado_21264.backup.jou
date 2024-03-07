@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Mar  5 21:35:00 2024
+# Process ID: 21264
+# Current directory: D:/Documents/xilinx/CPU-ALU-stuff
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2712 D:\Documents\xilinx\CPU-ALU-stuff\CPU-ALU-stuff.xpr
+# Log file: D:/Documents/xilinx/CPU-ALU-stuff/vivado.log
+# Journal file: D:/Documents/xilinx/CPU-ALU-stuff\vivado.jou
+# Running On: DESKTOP-SMT4I8Q, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 12, Host memory: 17090 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/xilinx/CPU-ALU-stuff/CPU-ALU-stuff.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+restart
+run 100 ns
+run 100 ns
+restart
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+restart
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+restart
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+save_wave_config {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg}
+restart
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+save_wave_config {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+run all
+restart
+run all
+restart
+run 2000 ns
+save_wave_config {D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+restart
+run 2000 ns
+close_sim
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+restart
+run 2000 ns
+close_sim
+synth_design -top CPU -part xc7k70tfbv676-3 -lint 
+launch_simulation
+open_wave_config D:/Documents/xilinx/CPU-ALU-stuff/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+restart
+run 2000 ns
+close_sim
+synth_design -top CPU -part xc7k70tfbv676-3 -lint 
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
