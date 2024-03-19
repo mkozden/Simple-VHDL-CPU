@@ -10,13 +10,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="209.429 ns"></ZoomEndTime>
-      <Cursor1Time time="27.583 ns"></Cursor1Time>
+      <ZoomStartTime time="5,254.620 ns"></ZoomStartTime>
+      <ZoomEndTime time="5,604.560 ns"></ZoomEndTime>
+      <Cursor1Time time="5,339.569 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="136"></NameColumnWidth>
-      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="16" />
    <wvobject fp_name="/CPU_tb/Mem_data_in" type="array">
@@ -31,13 +31,15 @@
       <obj_property name="ElementShortName">Mem_addr_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">Mem_addr_out[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/CPU_tb/Instr_addr_out" type="array">
-      <obj_property name="ElementShortName">Instr_addr_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Instr_addr_out[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/CPU_tb/Instr_in" type="array">
+   <wvobject fp_name="/CPU_tb/uut/Control/Instr_in" type="array">
       <obj_property name="ElementShortName">Instr_in[15:0]</obj_property>
       <obj_property name="ObjectShortName">Instr_in[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Control/Instr_addr_out" type="array">
+      <obj_property name="ElementShortName">Instr_addr_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr_addr_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/CPU_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
