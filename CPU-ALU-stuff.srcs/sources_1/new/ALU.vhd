@@ -38,6 +38,7 @@ architecture Behavioral of ALU is
 signal al_sel:std_logic_vector(0 downto 0);
 signal a_out,l_out:std_logic_vector(k-1 downto 0);
 signal flags_signal:std_logic_vector(3 downto 0);
+signal sub_check: std_logic;
 begin
 
 arithmetic: entity work.arithmeticunit
@@ -65,8 +66,9 @@ AL_mux: entity work.nto1mux
             sel=>al_sel,
             output=>Output);
 
+sub_check <= (not alu_func_sel(3) and not alu_func_sel(2) and not alu_func_sel(1) and alu_func_sel(0));
 flags_register: entity work.shift_register
             generic map(k=>4)
-            port map(flags_signal,Flags,clk,rst,alu_func_sel(0),'0','0'); --flags only updated when subtraction is used, since that's what is used for comparing numbers        
+            port map(flags_signal,Flags,clk,rst,sub_check,'0','0'); --flags only updated when subtraction is used, since that's what is used for comparing numbers        
 
 end Behavioral;

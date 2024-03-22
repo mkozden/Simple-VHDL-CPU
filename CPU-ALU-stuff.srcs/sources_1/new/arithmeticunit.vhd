@@ -1,6 +1,7 @@
 --Add -> "000"
 --Sub -> "001"
---Mul -> "010"
+--Mul_l -> "010"
+--Mul_u -> "011"
 --Logical shift left -> "100"
 --Logical shift right -> "101"
 --Arithmetic shift right -> "110"
@@ -20,15 +21,15 @@ entity arithmeticunit is
 end arithmeticunit;
 
 architecture Behavioral of arithmeticunit is
-signal add_sub_sel: std_logic;
+signal add_sub_sel, ul_sel: std_logic;
 signal shift_sel: std_logic_vector(1 downto 0);
 signal as_out,mul_out,shift_out,out_signal: std_logic_vector(k-1 downto 0);
 signal carry: std_logic;
--- greater,equal,less: std_logic;
 signal negative, zero, overflow, sign_A, sign_B, sign_O: std_logic;
 constant all_zero: std_logic_vector(k-1 downto 0) := (others => '0');
 begin
 add_sub_sel <= func_sel(0);
+ul_sel <= func_sel(0);
 shift_sel <= func_sel(1 downto 0);
 
 addsub: entity work.nbyfouradder
@@ -45,6 +46,7 @@ mul: entity work.nbitmultiplier
         port map(
         A => A,
         B => B,
+        ul_sel => ul_sel,
         output => mul_out);
         
 shifter: entity work.shiftunit
@@ -64,15 +66,6 @@ mux: entity work.nto1mux
         input(k-1 downto 0)=>shift_out,
         sel=>func_sel(2 downto 1),
         output=>out_signal);
-
---comparator: entity work.POZ_COMPARE
---        generic map(k=>k)
---        port map(
---        A=>A,
---        B=>B,
---        greater=>greater,
---        equal=>equal,
---        less=>less);
 
 output <= out_signal;
 

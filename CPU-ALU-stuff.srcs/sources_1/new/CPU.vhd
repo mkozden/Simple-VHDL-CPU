@@ -5,14 +5,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
 
 entity CPU is
-    Port ( --Instr_in : in STD_LOGIC_VECTOR (15 downto 0);
-           Mem_data_in : in STD_LOGIC_VECTOR (31 downto 0);
+    Port ( Mem_data_in : in STD_LOGIC_VECTOR (31 downto 0);
            clk: in STD_LOGIC;
            rst: in STD_LOGIC;
            Mem_RW: out STD_LOGIC;
            Mem_data_out : out STD_LOGIC_VECTOR (31 downto 0);
            Mem_addr_out : out STD_LOGIC_VECTOR (31 downto 0));
-           --Instr_addr_out : out STD_LOGIC_VECTOR (31 downto 0));
 end CPU;
 
 architecture Behavioral of CPU is

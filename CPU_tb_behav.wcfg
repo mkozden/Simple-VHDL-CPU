@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="5,254.620 ns"></ZoomStartTime>
-      <ZoomEndTime time="5,604.560 ns"></ZoomEndTime>
-      <Cursor1Time time="5,339.569 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="416.001 ns"></ZoomEndTime>
+      <Cursor1Time time="215.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="136"></NameColumnWidth>
-      <ValueColumnWidth column_width="67"></ValueColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/CPU_tb/Mem_data_in" type="array">
       <obj_property name="ElementShortName">Mem_data_in[31:0]</obj_property>
       <obj_property name="ObjectShortName">Mem_data_in[31:0]</obj_property>
@@ -72,6 +72,10 @@
       <obj_property name="ElementShortName">Branch_enable</obj_property>
       <obj_property name="ObjectShortName">Branch_enable</obj_property>
    </wvobject>
+   <wvobject fp_name="/CPU_tb/uut/Control/Branch_enable_control" type="logic">
+      <obj_property name="ElementShortName">Branch_enable_control</obj_property>
+      <obj_property name="ObjectShortName">Branch_enable_control</obj_property>
+   </wvobject>
    <wvobject fp_name="/CPU_tb/uut/Control/Branch_mode" type="array">
       <obj_property name="ElementShortName">Branch_mode[1:0]</obj_property>
       <obj_property name="ObjectShortName">Branch_mode[1:0]</obj_property>
@@ -89,6 +93,5 @@
       <obj_property name="ElementShortName">reg_loads[7:0]</obj_property>
       <obj_property name="ObjectShortName">reg_loads[7:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>
